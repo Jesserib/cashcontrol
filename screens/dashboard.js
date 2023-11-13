@@ -1,9 +1,10 @@
 import React from "react";
 import { View, Text, StyleSheet } from "react-native";
-import CardGreen from "./cardgreen";
-import CardRed from "./cardred";
-import CardGoal from "./cardgoal";
-import CardTree from "./cardtree";
+
+import CardGreen from "../components/cardgreen";
+import CardRed from "../components/cardred";
+import CardGoal from "../components/cardgoal";
+import CardTree from "../components/cardtree";
 
 const Dashboard = () => {
   return (
@@ -13,8 +14,8 @@ const Dashboard = () => {
         <CardGreen Receitas="500" />
         <CardRed Despesas="500" />
       </View>
-      <CardGoal />
       <CardTree />
+      <CardGoal />
     </View>
   );
 };
@@ -37,6 +38,7 @@ const styles = StyleSheet.create({
     justifyContent: "flex-start",
     alignItems: "flex-start",
     marginTop: 24,
+    marginBottom: 0,
   },
 });
 

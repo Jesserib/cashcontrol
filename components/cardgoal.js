@@ -4,19 +4,15 @@ import { View, Text, StyleSheet, Image } from "react-native";
 const CardGoal = () => {
   return (
     <View style={styles.container}>
-      <View style={styles.card}>
-        <View style={styles.contentContainer}>
+      <View style={styles.contentContainer}>
           <View style={styles.textContainer}>
-            <Text style={styles.textRec}>Criar uma meta</Text>
-            <Text style={styles.value}>
-              Junte seu dinheiro agora, de modo fácil e prático!
-            </Text>
+            <Text style={styles.title}>Criar uma meta</Text>
+            <Text style={styles.text}>Junte seu dinheiro agora, de modo fácil e prático!</Text>
           </View>
           <Image
             source={require("../assets/Buttonmoney.png")}
             style={styles.image}
           />
-        </View>
       </View>
     </View>
   );
@@ -24,12 +20,6 @@ const CardGoal = () => {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  card: {
     width: 343,
     height: 120,
     borderRadius: 16,
@@ -55,15 +45,15 @@ const styles = StyleSheet.create({
     marginTop: 32,
     resizeMode: "contain",
   },
-  textRec: {
+  title: {
     fontSize: 24,
     fontWeight: "bold",
-    color: "#000",
+    color: "#101B22",
   },
-  value: {
+  text: {
     fontSize: 18,
-    color: "#000",
-    marginTop: 4,
+    color: "#4C5459",
+    marginTop: 8,
     width: 188,
     lineHeight: 24,
   },

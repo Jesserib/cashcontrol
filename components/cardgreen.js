@@ -4,26 +4,15 @@ import { View, Text, StyleSheet, Image } from "react-native";
 const CardGreen = ({ Receitas }) => {
   return (
     <View style={styles.container}>
-      <View style={styles.card}>
-        <Image
-          source={require("../assets/Buttongrren.png")}
-          style={styles.image}
-        />
+      <Image source={require("../assets/Buttongrren.png")} style={styles.image}/>
         <Text style={styles.textRec}>Receitas</Text>
         <Text style={styles.value}>R${Receitas}</Text>
-      </View>
     </View>
   );
 };
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  card: {
     width: 163,
     height: 155,
     borderRadius: 24,
@@ -41,17 +30,17 @@ const styles = StyleSheet.create({
   },
   textRec: {
     fontSize: 18,
-    color: "#000",
+    color: "#445055",
     marginTop: 16,
     marginLeft: 16,
   },
-  value:{
+  value: {
     fontSize: 26,
     fontWeight: "bold",
-    color: "#000",
+    color: "#101B22",
     marginTop: 4,
     marginLeft: 16,
-  }
+  },
 });
 
 export default CardGreen;

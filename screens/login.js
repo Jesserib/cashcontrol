@@ -13,7 +13,6 @@ const LoginScreen = () => {
   const [showPassword, setShowPassword] = useState(false);
 
   const handleLogin = () => {
-    // Adicione aqui a lógica de validação básica
     if (email && password === 123) {
       alert("Login bem-sucedido!");
     } else {
@@ -68,13 +67,13 @@ const styles = StyleSheet.create({
     marginBottom: 50,
   },
   input: {
-    borderRadius: 10,
+    borderRadius: 12,
     height: 40,
     borderColor: "gray",
     borderWidth: 1,
-    marginBottom: 15,
+    marginBottom: 16,
     paddingLeft: 10,
-    marginTop: 10,
+    marginTop:0,
   },
   loginButton: {
     backgroundColor: "blue",

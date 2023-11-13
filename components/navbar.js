@@ -3,20 +3,20 @@ import React from "react";
 import { View, TouchableOpacity, StyleSheet,} from "react-native";
 import Icon from "react-native-vector-icons/FontAwesome"; // Você pode mudar para o ícone que preferir
 
-const BottomMenu = () => {
+const Navbar = () => {
   return (
     <View style={styles.container}>
       <TouchableOpacity style={styles.icon}>
-        <Icon name="home" size={30} color="#9FA4A7" />
+        <Icon name="home" size={24} color="#9FA4A7" />
       </TouchableOpacity>
       <TouchableOpacity style={styles.icon}>
-        <Icon name="pie-chart" size={30} color="#9FA4A7" />
+        <Icon name="pie-chart" size={24} color="#9FA4A7" />
       </TouchableOpacity>
       <TouchableOpacity style={styles.icon}>
-        <Icon name="dollar" size={30} color="#9FA4A7" />
+        <Icon name="dollar" size={24} color="#9FA4A7" />
       </TouchableOpacity>
       <TouchableOpacity style={styles.icon}>
-        <Icon name="user" size={30} color="#9FA4A7" />
+        <Icon name="user" size={24} color="#9FA4A7" />
       </TouchableOpacity>
     </View>
   );
@@ -28,7 +28,11 @@ const styles = StyleSheet.create({
     justifyContent: "space-between",
     alignItems: "center",
     backgroundColor: "#fff",
-    padding: 10,
+    paddinleft: 16,
+    paddingRight: 16,
+    paddingTop: 12,
+    paddingBottom: 12,
+
     position: "absolute",
     bottom: 0,
     left: 0,
@@ -42,4 +46,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default BottomMenu;
+export default Navbar;

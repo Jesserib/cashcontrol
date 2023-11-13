@@ -1,17 +1,14 @@
 import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View } from "react-native";
-import LoginScreen from "./components/login";
-import BottomMenu from "./components/bottombutton";
-import Dashboard from "./components/dashboard";
-import CardGreen from "./components/cardgreen";
-import CardRed from "./components/cardred";
-import CardGoal from "./components/cardgoal";
-import CardTree from "./components/cardtree";
+import { StyleSheet, Text, View, ScrollView} from "react-native";
+import LoginScreen from "./screens/login";
+import BottomMenu from "./components/navbar";
+import Dashboard from "./screens/dashboard";
+import Screen from "./screens/screen";
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Dashboard />
+      <Screen />
       <BottomMenu />
     </View>
   );
@@ -22,7 +19,7 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: "#fff",
     alignItems: "center",
-    justifyContent: "center",
+    justifyContent: "flex-start",
     // fontFamily: "Nunito",
   },
 });
