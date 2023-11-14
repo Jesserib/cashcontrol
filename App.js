@@ -4,11 +4,12 @@ import LoginScreen from "./screens/login";
 import BottomMenu from "./components/navbar";
 import Dashboard from "./screens/dashboard";
 import Screen from "./screens/screen";
+import Button from "./components/button";
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Screen />
+      <Screen/>
       <BottomMenu />
     </View>
   );
