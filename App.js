@@ -1,16 +1,12 @@
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View, ScrollView} from "react-native";
-import LoginScreen from "./screens/login";
-import BottomMenu from "./components/navbar";
-import Dashboard from "./screens/dashboard";
-import Screen from "./screens/screen";
-import Button from "./components/button";
+import Insertgasto from "./screens/cards/cardinsertgasto";
+
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Screen/>
-      <BottomMenu />
+      <Insertgasto />
     </View>
   );
 }
@@ -21,6 +17,5 @@ const styles = StyleSheet.create({
     backgroundColor: "#fff",
     alignItems: "center",
     justifyContent: "flex-start",
-    // fontFamily: "Nunito",
   },
 });

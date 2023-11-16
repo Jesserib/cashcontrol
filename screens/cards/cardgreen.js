@@ -8,7 +8,7 @@ const CardGreen = ({ Receitas }) => {
         <Text style={styles.textRec}>Receitas</Text>
         <Text style={styles.value}>R${Receitas}</Text>
     </View>
-  );
+  );     
 };
 
 const styles = StyleSheet.create({
