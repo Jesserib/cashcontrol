@@ -1,14 +1,25 @@
 import React from "react";
-import { StyleSheet, Text, View } from "react-native";
-import Icon from "react-native-vector-icons/FontAwesome"; 
+import { StyleSheet, Text, View, TouchableOpacity } from "react-native";
+import Icon from "react-native-vector-icons/FontAwesome";
 import Icones from "react-native-vector-icons/AntDesign";
+import { useNavigation } from "@react-navigation/native";
 
 export default function Navtext({ text }) {
+  const navigation = useNavigation();
+
+  const navigateToScreen = (screenName) => {
+    navigation.navigate(screenName);
+  };
+
   return (
     <View style={styles.container}>
-      <Icon name="angle-left" size={34} color="#000" style={styles.icon} />
+      <TouchableOpacity onPress={() => navigateToScreen("Dashboard")}>
+        <Icon name="angle-left" size={34} color="#000" style={styles.icon} />
+      </TouchableOpacity>
       <Text style={styles.texthome}>{text}</Text>
-      <Icones name="plus" size={28} color="#000" style={styles.icones} />
+      <TouchableOpacity onPress={() => {}}>
+        <Icones name="plus" size={28} color="#000" style={styles.icones} />
+      </TouchableOpacity>
     </View>
   );
 }
@@ -37,9 +48,9 @@ const styles = StyleSheet.create({
     width: "auto",
   },
   icon: {
-    left:14,
+    left: 14,
   },
-  icones:{
-    right:14,
-  }
+  icones: {
+    right: 14,
+  },
 });

@@ -1,31 +1,41 @@
 import React from "react";
-import { View, Text, StyleSheet, Image, TouchableOpacity} from "react-native";
+import { View, Text, StyleSheet, Image, TouchableOpacity } from "react-native";
 
-const CardTotal = () => {
+const CardTotal = ({ nome, valor }) => {
+    valor = 0;
+
   return (
     <View style={styles.container}>
       <View style={styles.topContainer}>
         <View style={styles.leftContainer}>
           <Image
-            source={require("../assets/transport.png")}
+            source={require("../../assets/transport.png")}
             style={styles.icon}
           />
-          <Text style={styles.title}>Transporte</Text>
+          <Text style={styles.title}>
+            {nome}
+          </Text>
         </View>
-        <Text style={styles.title}>R$300,00</Text>
+        <Text style={styles.title}>
+          R${valor}
+        </Text>
       </View>
       <View style={styles.descriptionContainer}>
         <Text style={styles.text}>Outros Gastos</Text>
-        <Text style={styles.text}>R$60,00</Text>
+        <Text style={styles.text}>
+          R$0,00
+        </Text>
       </View>
       <View style={styles.descriptionContainer}>
         <Text style={styles.text}>Combustível</Text>
-        <Text style={styles.text}>R$240,00</Text>
+        <Text style={styles.text}>
+          R$0,00
+        </Text>
       </View>
       <TouchableOpacity style={styles.buttonContainer}>
         <Text style={styles.button}>Ver Detalhes</Text>
         <Image
-          source={require("../assets/buttonicon.png")}
+          source={require("../../assets/buttonicon.png")}
           style={styles.iconbutton}
         />
       </TouchableOpacity>
@@ -43,7 +53,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#FFF",
     elevation: 2,
     padding: 24,
-    marginBottom:16,
+    marginBottom: 16,
   },
   topContainer: {
     flexDirection: "row",
@@ -79,7 +89,7 @@ const styles = StyleSheet.create({
   buttonContainer: {
     flexDirection: "row",
     alignItems: "center",
-    justifyContent:"center",
+    justifyContent: "center",
     marginTop: 32,
   },
   button: {

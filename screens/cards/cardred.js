@@ -4,7 +4,7 @@ import { View, Text, StyleSheet, Image } from "react-native";
 const CardRed = ({ Despesas }) => {
   return (
     <View style={styles.container}>
-      <Image source={require("../assets/ButtonRed.png")} style={styles.image} />
+      <Image source={require("../../assets/ButtonRed.png")} style={styles.image} />
       <Text style={styles.textRec}>Despesas</Text>
       <Text style={styles.value}>R${Despesas}</Text>
     </View>
