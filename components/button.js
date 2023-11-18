@@ -2,12 +2,12 @@ import React from "react";
 import { View, TouchableOpacity, Text, StyleSheet } from "react-native";
 import Icon from "react-native-vector-icons/FontAwesome";
 
-const Button = ({content}) => {
+const Button = ({content, onPress}) => {
   return (
     <TouchableOpacity
       style={styles.container}
       onPress={() => {
-        console.log("Botão pressionado!");
+        onPress();
       }}
     >
       <Icon name="plus" size={16} color="#fff" style={styles.icon} />

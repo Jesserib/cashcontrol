@@ -6,12 +6,12 @@ const CardBar = () => {
     <View style={styles.container}>
       <View style={styles.topContainer}>
         <View style={styles.leftContainer}>
-          <Text style={styles.text}>Despesas</Text>
-          <Text style={styles.title}>R$1000,00</Text>
+          <Text style={styles.text}>Disponível</Text>
+          <Text style={styles.title}>R$2300</Text>
         </View>
         <View style={styles.RightContainer}>
-          <Text style={styles.text}>Disponível</Text>
-          <Text style={styles.title}>R$2.200,00</Text>
+          <Text style={styles.text}>Usado</Text>
+          <Text style={styles.title}>R$1000</Text>
         </View>
       </View>
       <View style={styles.bar}>
@@ -65,7 +65,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#EAE9F0",
   },
   barcolor: {
-    width: "40%",
+    width: "66.66%",
     height: 8,
     borderRadius: 6,
     backgroundColor: "#6347EB",

@@ -10,7 +10,7 @@ const CardGoal = () => {
             <Text style={styles.text}>Junte seu dinheiro agora, de modo fácil e prático!</Text>
           </View>
           <Image
-            source={require("../assets/Buttonmoney.png")}
+            source={require("../../assets/Buttonmoney.png")}
             style={styles.image}
           />
       </View>

@@ -7,15 +7,17 @@ const CardTree = () => {
       <View style={styles.contentContainer}>
         <View style={styles.textContainer}>
           <Text style={styles.textRec}>Dinheiro guardado:</Text>
-          <Text style={styles.value}>R$3.800,00</Text>
+          <Text style={styles.value}>R$2300,00</Text>
           <TouchableOpacity style={styles.buttonContainer}>
             <Text style={styles.button}>Ver Detalhes</Text>
-            <Image source={require("../assets/buttonicon.png")} style={styles.icon}
+            <Image
+              source={require("../../assets/buttonicon.png")}
+              style={styles.icon}
             />
           </TouchableOpacity>
         </View>
         <Image
-          source={require("../assets/Buttontree.png")}
+          source={require("../../assets/Buttontree.png")}
           style={styles.image}
         />
       </View>
