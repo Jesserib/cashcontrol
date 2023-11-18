@@ -2,6 +2,7 @@ import React from "react";
 import { StyleSheet, Text, View, TouchableOpacity } from "react-native";
 import Icon from "react-native-vector-icons/FontAwesome";
 import Icones from "react-native-vector-icons/AntDesign";
+<<<<<<< HEAD
 import {useNavigation} from "@react-navigation/native";
 
 export default function Navtext({text}) {
@@ -11,6 +12,17 @@ export default function Navtext({text}) {
     navigation.navigate(screenName);
   };
 
+=======
+import { useNavigation } from "@react-navigation/native";
+
+export default function Navtext({ text }) {
+  const navigation = useNavigation();
+
+  const navigateToScreen = (screenName) => {
+    navigation.navigate(screenName);
+  };
+
+>>>>>>> 37ffd184bdaca940260d713b4602ff2706a2ab3c
   return (
     <View style={styles.container}>
       <TouchableOpacity onPress={() => navigateToScreen("Dashboard")}>
@@ -32,9 +44,14 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "space-between",
+<<<<<<< HEAD
     backgroundColor:"#FFF",
     zIndex: 1,
     paddingTop: 50,
+=======
+    zIndex: 1,
+    marginTop: 50,
+>>>>>>> 37ffd184bdaca940260d713b4602ff2706a2ab3c
   },
 
   texthome: {
