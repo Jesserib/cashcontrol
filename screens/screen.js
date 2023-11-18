@@ -1,11 +1,7 @@
 import React from "react";
 import { View, Text, StyleSheet, ScrollView } from "react-native";
 import CardBar from "./cards/cardbar";
-<<<<<<< HEAD
 import CardTotal from "./cardtotal";
-=======
-import CardTotal from "./cards/cardtotal";
->>>>>>> 37ffd184bdaca940260d713b4602ff2706a2ab3c
 import Button from "../components/button";
 import Navtext from "../components/navtext";
 import CardAdd from "./cards/cardadd";
@@ -23,7 +19,6 @@ const Screen = () => {
           <Text style={styles.text}>Valor adquirido esse mês:</Text>
           <Text style={styles.title}>R$3300,00</Text>
           <CardBar />
-<<<<<<< HEAD
           <CardTotal
             key={20}
             nome={"Salário"}
@@ -34,8 +29,6 @@ const Screen = () => {
             receita1={"2900,00"}
             receita2={"400,00"}
           />
-=======
->>>>>>> 37ffd184bdaca940260d713b4602ff2706a2ab3c
           {receitas.map((receita) => (
             <CardTotal
               key={receita.id}
@@ -108,10 +101,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
     flex: 1,
-<<<<<<< HEAD
     zIndex:1
-=======
->>>>>>> 37ffd184bdaca940260d713b4602ff2706a2ab3c
   },
 });
 

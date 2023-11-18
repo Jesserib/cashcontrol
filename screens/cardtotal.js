@@ -1,4 +1,3 @@
-<<<<<<<< HEAD:screens/cardtotal.js
 import React, { useState } from "react";
 import { View, Text, StyleSheet, Image, TouchableOpacity } from "react-native";
 import { useNavigation } from "@react-navigation/native";
@@ -12,23 +11,16 @@ const CardTotal = ({
   receita2,
   mostrarDetalhes
 }) => {
-  const [detalhesVisiveis] = useState(mostrarDetalhes);
+ const [detalhesVisiveis] = useState(mostrarDetalhes);
   const navigation = useNavigation();
-  const navigateToScreen = (screenName) => {navigation.navigate(screenName);
- };
-========
-import React from "react";
-import { View, Text, StyleSheet, Image, TouchableOpacity } from "react-native";
-
+  const navigateToScreen = (screenName) => {navigation.navigate(screenName)}
+  
 const CardTotal = ({ nome, valor }) => {
     valor = 0;
->>>>>>>> 37ffd184bdaca940260d713b4602ff2706a2ab3c:screens/cards/cardtotal.js
-
   return (
     <View style={styles.container}>
       <View style={styles.topContainer}>
         <View style={styles.leftContainer}>
-<<<<<<<< HEAD:screens/cardtotal.js
           <Image source={require("../assets/work.png")} style={styles.icon} />
           <Text style={styles.title}>{nome}</Text>
         </View>
@@ -50,41 +42,10 @@ const CardTotal = ({ nome, valor }) => {
         style={styles.buttonContainer}
         onPress={navigateToScreen("Receitas")}
       >
-========
-          <Image
-            source={require("../../assets/transport.png")}
-            style={styles.icon}
-          />
-          <Text style={styles.title}>
-            {nome}
-          </Text>
-        </View>
-        <Text style={styles.title}>
-          R${valor}
-        </Text>
-      </View>
-      <View style={styles.descriptionContainer}>
-        <Text style={styles.text}>Outros Gastos</Text>
-        <Text style={styles.text}>
-          R$0,00
-        </Text>
-      </View>
-      <View style={styles.descriptionContainer}>
-        <Text style={styles.text}>Combustível</Text>
-        <Text style={styles.text}>
-          R$0,00
-        </Text>
-      </View>
-      <TouchableOpacity style={styles.buttonContainer}>
->>>>>>>> 37ffd184bdaca940260d713b4602ff2706a2ab3c:screens/cards/cardtotal.js
-        <Text style={styles.button}>Ver Detalhes</Text>
-        <Image
-          source={require("../../assets/buttonicon.png")}
-          style={styles.iconbutton}
-        />
       </TouchableOpacity>
     </View>
   );
+};
 };
 
 const styles = StyleSheet.create({
